@@ -1,4 +1,13 @@
 {
-  "buildCommand": "python3 index.py"
-  
+  "builds": [
+    {
+      "src": "index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "functions": {
+    "api": {
+      "runtime": "python3.9"
+    }
+  }
 }

@@ -48,6 +48,13 @@ async def webhook():
         # If the request does not contain JSON data, respond with an error
         return {"error": "Request must contain JSON data"}, 400
 
+def handler(event, context):
+    # Your code logic goes here
+    return {
+        "statusCode": 200,
+        "body": "Hello, Vercel!"
+    }
+
 if __name__ == '__main__':
     app.run(debug=True)
 
